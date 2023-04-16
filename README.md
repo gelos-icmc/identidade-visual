@@ -34,10 +34,10 @@ A estrutura de pastas é a seguinte:
 
 `src/vertical` - Logo vertical do GELOS contendo um floco de neve seguido pelo nome "GELOS" na vertical
 
-A seguir um modelo exemplo com a cor padrão do GELOS (Azul):
+A seguir alguns modelos exemplos com a cor padrão do GELOS (Azul):
 
 <style>
-#container {
+.container {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -49,7 +49,7 @@ A seguir um modelo exemplo com a cor padrão do GELOS (Azul):
 }
 </style>
 
-<div id="container">
+<div class="container">
   <div class="icon">
 
   <p>Ícone padrão</p>
