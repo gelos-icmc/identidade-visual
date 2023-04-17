@@ -24,9 +24,9 @@ stdenv.mkDerivation {
   in ''
     inkscape --export-type=png **/*.svg -w ${toString size} -h ${toString size}
     ${tree} -o index.html .
-    for d in */; do
-      ${tree} -o "$d/index.html" "$d"
-    done
+    ${tree} -o icon/index.html icon
+    ${tree} -o logo/index.html logo
+    ${tree} -o vertical/index.html vertical
   '';
 
   # Mover imagens para output
